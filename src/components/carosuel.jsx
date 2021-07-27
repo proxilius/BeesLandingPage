@@ -1,16 +1,19 @@
 
 import { Carousel } from "react-bootstrap";
+import { useState } from "react";
 import pic from './pics/bee1.jpg'
 export const MyCarousel = (props) => {
+
+
   return (
     <div id='about3'>
       <div className='container-fluid'>
         <div className='row' >
-        <Carousel>
+        <Carousel fade>
         <Carousel.Item style={{ justifyContent:"center"}}>
           <img
             style={{ display:"flex", width:"100%", height:"90%",}}
-            src={pic}
+            src="https://frontiersinblog.files.wordpress.com/2021/05/shutterstock_420380341-1.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
