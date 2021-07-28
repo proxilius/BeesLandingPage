@@ -54,20 +54,6 @@ export const MyGallery = (props) => {
             </Item>
             </div>
         </div>
-        <div className="col-md-3">
-        <div className="gallery-pic-item">
-            <Item
-                original="/img/BeesPictures/Gallery/3_t.jpg"
-                width="1024"
-                height="768"
-                
-              >
-                {({ ref, open }) => (
-                  <img ref={ref} onClick={open} src="/img/BeesPictures/Gallery/3_t.jpg" />
-                )}
-            </Item>
-            </div>
-        </div>
         </div>
         
 
