@@ -3,10 +3,9 @@ export const Team = (props) => {
     <div id='team' className='text-center'>
       <div className='container'>
         <div className='col-md-8 col-md-offset-2 section-title'>
-          <h2>Meet the Team</h2>
+          <h2>A Csapat</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            A méz az életünk.
           </p>
         </div>
         <div id='row'>
@@ -19,6 +18,7 @@ export const Team = (props) => {
                     <div className='caption'>
                       <h4>{d.name}</h4>
                       <p>{d.job}</p>
+                      <p className="team-p">{d.desc}</p>
                     </div>
                   </div>
                 </div>

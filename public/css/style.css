@@ -252,15 +252,43 @@ header .intro-text {
 /* About Section */
 #about {
 	padding: 100px 0;
-	background-color: rgb(147, 174, 185);
+	background:linear-gradient(to right, #f3f3da 0%, #f7f19f 100%);
 }
 #about3 {
-	background-color: rgb(137, 198, 223);
+	background: linear-gradient(to right, #f0f1e3 0%, #faf1d4 100%);
 }
+
+#about3 h1 {
+	text-align: center;
+	color:#ffffff;
+	margin-top:70px;
+	margin-bottom:15px;
+	font-weight:bold;
+	font-size:60px;
+	
+}
+
+#about3 h1 span{
+	background-color: burlywood;
+}
+
+#about3 h3 {
+	color:#0c0c0c;
+	background-color:#e5e5e5;
+	margin-top:50px;
+	margin-bottom:50px;
+	font-weight:bold;
+	padding: 20px 20px 20px 20px;
+	width: 300px;
+
+}
+
 #about h3 {
 	font-size: 22px;
 	margin: 0 0 20px 0;
 }
+
+
 #about h2 {
 	position: relative;
 	margin-bottom: 15px;
@@ -299,7 +327,14 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin: 30px 0;
+	text-align: justify;
 }
+
+
+#about h4 {
+	font-style: oblique;
+}
+
 /* Services Section */
 #services {
 	padding: 100px 0;
@@ -355,6 +390,7 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
+	background-color: rgba(248, 241, 228, 0.75);
 }
 .portfolio-item {
 	margin: 1px -15px 0 -14px;
@@ -364,6 +400,10 @@ header .intro-text {
 	overflow: hidden;
 	position: relative;
 	margin: 0;
+}
+
+#portfolio h1 {
+	margin-bottom: 50px;
 }
 .hover-bg .hover-text {
 	position: absolute;
@@ -399,7 +439,7 @@ header .intro-text {
 }
 /* Testimonials Section */
 #testimonials {
-	padding: 100px 0;
+	padding: 10px 0;
 	background: #f6f6f6;
 }
 #testimonials i {
@@ -410,6 +450,7 @@ header .intro-text {
 .testimonial {
 	position: relative;
 	padding: 20px;
+	margin-bottom: 30px;
 }
 .testimonial-image {
 	float: left;
@@ -440,8 +481,12 @@ header .intro-text {
 #team {
 	padding: 100px 0;
 }
+.team-p {
+	text-align: justify;
+}
 #team h4 {
 	margin: 5px 0;
+	font-weight:bold;
 }
 #team .team-img {
 	width: 240px;
@@ -449,6 +494,10 @@ header .intro-text {
 #team .thumbnail {
 	background: transparent;
 	border: 0;
+}
+
+#team .thumbnail:hover{
+	padding-left: 20px;
 }
 #team .thumbnail .caption {
 	padding: 10px 0 0 0;
@@ -793,17 +842,23 @@ color: #777;
   }
   
   .carousel-caption {
-	position: absolute;
 	right: 15%;
-	bottom: 150px;
+	bottom: 450px;
 	left: 15%;
 	z-index: 10;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgb(98, 46, 219);
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-end;
+  }
 
-	
+  .gallery-pic-item{
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  background-color: beige;
+  }
+
+  .gallery-pic-item:hover {
+	background-color: rgb(100, 100, 70);
   }

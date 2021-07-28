@@ -14,6 +14,7 @@ export const Header = (props) => {
                 <a
                   href='#features'
                   className='btn btn-custom btn-lg page-scroll'
+                  style={{marginBottom:"40px"}}
                 >
                   Tovább
                 </a>{' '}

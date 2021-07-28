@@ -53,56 +53,48 @@
 
 
     ],
-    "Testimonials": [{
-            "img": "img/testimonials/01.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+    "Testimonials": [
+        {
+            "img": "img/BeesPictures/about-us/eva.jpg",
+            "text": "\"Csak óvatosan, meg ne csípjenek a méhek...\"",
+            "name": "Vica Néni"
         },
         {
-            "img": "img/testimonials/02.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "img": "img/BeesPictures/about-us/berenyi.jpg",
+            "text": "\"A Kkft ÉN vagyok!\"",
+            "name": "Berényi Miklós"
         },
         {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
-        },
-        {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
-        },
-        {
-            "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "img": "img/BeesPictures/about-us/sanyi.jpg",
+            "text": "\"K*rva jó ez a cég, szeretek velük együtt dolgozni. Élvezem, hogy tele a udvar méhekkel. Egy meg is csípet egyszer!\"",
+            "name": "Sanyi PaPa"
         }
     ],
     "Team": [{
-            "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
+            "img": "img/BeesPictures/Team/tibi.jpg",
+            "name": "Bartalovics Tibor",
+            "job": "CEO, Cégalapító",
+            "desc": "Tibor gondozza és felügyeli a méheket. Kapcsolatot tart a környező méhész kollégákkal és folyamatosan figyelemmel kíséri a piacra kerülő újabb és újabb vegyszereket amik akár veszélyt is jelenthetnek a méhpopulációra." 
         },
         {
-            "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
-        }, {
-            "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
+            "img": "img/BeesPictures/Team/norbert.jpg",
+            "name": "Grüll Norbert",
+            "job": "Webfejlesztő",
+            "desc":"Norbert a vállalatunk IT szakembere. A gyönyörű honlapunk is az ő keze munkáját dicséri. Folyamatos ellenőrzés alatt tartja és fejleszti hogy napra készek tudjunk maradni. A méhészetünkről szóló videókat is ő forgatja, vágja és publikálja, tehát ő felel a média megjelenésünkről is"
         },
         {
-            "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
+            "img": "img/BeesPictures/Team/petra.jpg",
+            "name": "Bartalovics Petra",
+            "job": "Manager",
+            "desc":"Cégünk ügyvezető helyettese, menedzsere és marketingese. A hivatalos dokumentációkért, a cég megjelenésért és kapcsolatok kiépítéséért felelős. Emelett a csomagolásban is és a média megjelenésben is részt vesz. "
+        },
+        {
+            "img": "img/BeesPictures/Team/bea.jpg",
+            "name": "Lucz Beáta",
+            "job": "Termelést segítő munkatárs",
+            "desc":"Termelést segítő munkatárs, aki tudásával és szorgalmával hozzá járul sikeres működésünköz. Bea emelett részt vesz a csomagolásban és eladásban is. Amennyiben rendelsz weboldalunkról, biztos lehetsz benne hogy azt Bea készítette számodra össze a legnagyobb szeretettel."
         }
+  
     ],
     "Contact": {
         "address": "4321 California St, San Francisco, CA 12345 ",
@@ -122,15 +114,16 @@
             "title": "Hárs Méz",
             "text": "A hársméz színe az akácénál sötétebb, a világossárgától a borostyánsárgáig változhat. Erős, jellegzetes hárs illatú, enyhén kesernyés ízű fajtaméz."
         },
-        {
-            "icon": "img/BeesPictures/akac.png",
-            "title": "Akácméz",
-            "text": "Az akácméz világos, zöldessárga színű, sokáig folyékony állapotban maradó, akácvirág illatú méz. A Magyarországon termelt akácméz különleges minősége miatt Hungaricumnak számít, keresett export termék."
-        },
+        
         {
             "icon": "img/BeesPictures/levendula.png",
             "title": "Levendulaméz",
             "text": "Franciaországban jól ismert mézfajta, de Magyarországon is előfordul. Borostyánsárga színű, jellegzetesen kellemes illatú méz."
+        },
+        {
+            "icon": "img/BeesPictures/mehnyaloka.jpg",
+            "title": "Mézkanálka",
+            "text": "A mézkanálka egy olyan eszköz amit a reggeli teánkba kávénkba tudunk belekeverni. Ha esetleg nem iszunk teát vagy kávét akkor akar egy nyalóka szerepet is betöltheti mind gyerekek mind felnőttek számára"
         }
     ]
 }

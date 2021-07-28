@@ -30,13 +30,15 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                Rólunk
-              </a>
             </li>
             <li>
               <a href='#about' className='page-scroll'>
                 Rólunk
+              </a>
+            </li>
+            <li>
+              <a href='#about3' className='page-scroll'>
+                Tudtad-e?
               </a>
             </li>
             <li>
@@ -51,12 +53,12 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href='#testimonials' className='page-scroll'>
-                Testimonials
+                Rólunk Mondták
               </a>
             </li>
             <li>
               <a href='#team' className='page-scroll'>
-                Áraink
+                Csapat
               </a>
             </li>
             <li>

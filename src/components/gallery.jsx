@@ -1,207 +1,79 @@
-export const Gallery = (props) => {
+import 'photoswipe/dist/photoswipe.css'
+import 'photoswipe/dist/default-skin/default-skin.css'
+
+
+import { Gallery, Item } from 'react-photoswipe-gallery'
+
+export const MyGallery = (props) => {
   return (
     <div id='portfolio' className='text-center'>
-      <div className='container'>
-        <div className='section-title'>
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
-        <div className='row'>
-          <div className='portfolio-items'>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/01-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/01-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/02-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/02-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/03-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/03-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/04-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/04-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/05-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/05-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/06-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/06-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/07-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/07-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/08-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/08-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
-            <div className='col-sm-6 col-md-4 col-lg-4'>
-              <div className='portfolio-item'>
-                <div className='hover-bg'>
-                  {' '}
-                  <a
-                    href='img/portfolio/09-large.jpg'
-                    title='Project Title'
-                    data-lightbox-gallery='gallery1'
-                  >
-                    <div className='hover-text'>
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src='img/portfolio/09-small.jpg'
-                      className='img-responsive'
-                      alt='Project Title'
-                    />{' '}
-                  </a>{' '}
-                </div>
-              </div>
-            </div>
+      <div className='container' >
+        <h1>Galéria</h1>
+      <Gallery >
+        <div className="container">
+        <div className="col-md-3 ">
+          <div className="gallery-pic-item">
+              <Item
+                  original="/img/BeesPictures/Gallery/1.jpg"
+                  width="1024"
+                  height="768"
+                  
+                >
+                  {({ ref, open }) => (
+                    <img ref={ref} onClick={open} src="/img/BeesPictures/Gallery/1_t.jpg" />
+                  )}
+              </Item>
           </div>
+            
         </div>
+        <div className="col-md-3">
+        <div className="gallery-pic-item">
+            <Item
+                original="/img/BeesPictures/Gallery/2.jpg"
+                width="1024"
+                height="768"
+                
+              >
+                {({ ref, open }) => (
+                  <img ref={ref} onClick={open} src="/img/BeesPictures/Gallery/2_t.jpg" />
+                )}
+            </Item>
+            </div>
+        </div>
+        <div className="col-md-3">
+        <div className="gallery-pic-item">
+            <Item
+                original="/img/BeesPictures/Gallery/4.jpg"
+                width="1024"
+                height="768"
+                
+              >
+                {({ ref, open }) => (
+                  <img ref={ref} onClick={open} src="/img/BeesPictures/Gallery/4_t.jpg" />
+                )}
+            </Item>
+            </div>
+        </div>
+        <div className="col-md-3">
+        <div className="gallery-pic-item">
+            <Item
+                original="/img/BeesPictures/Gallery/3_t.jpg"
+                width="1024"
+                height="768"
+                
+              >
+                {({ ref, open }) => (
+                  <img ref={ref} onClick={open} src="/img/BeesPictures/Gallery/3_t.jpg" />
+                )}
+            </Item>
+            </div>
+        </div>
+        </div>
+        
+
+          
+    </Gallery>
+ 
       </div>
     </div>
   )
