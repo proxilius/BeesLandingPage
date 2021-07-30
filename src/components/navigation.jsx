@@ -1,5 +1,67 @@
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core';
+import {useNavigate} from 'react-router-dom';
+
+import SmoothScroll from 'smooth-scroll'
+
+export const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true,
+  })
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: theme.palette.background.default,
+    display: 'flex',
+    height: '100%',
+    overflow: 'hidden',
+    width: '100%'
+  },
+  wrapper: {
+    display: 'flex',
+    flex: '1 1 auto',
+    overflow: 'hidden',
+    paddingTop: 64
+  },
+  contentContainer: {
+    display: 'flex',
+    flex: '1 1 auto',
+    overflow: 'hidden'
+  },
+  content: {
+    flex: '1 1 auto',
+    height: '100%',
+    overflow: 'auto'
+  }
+}));
+
+
+
 export const Navigation = (props) => {
+
+  const classes = useStyles();
+  const navigate = useNavigate();
+  const scrollTo = async (id) => {
+    let element = document.getElementById(id);
+    if(element == undefined) {
+      console.log("dfdsf")
+      await navigate(`/`)
+
+      element = document.getElementById(id);
+      
+  }
+
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
+    <div className={classes.root}>
+     
+    
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container-fluid'>
 
@@ -17,7 +79,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
+          <a className='navbar-brand page-scroll' href='#page-top' >
             Bartalovics Méhész 
           </a>{' '}
           </div>
@@ -32,37 +94,39 @@ export const Navigation = (props) => {
             <li>
             </li>
             <li>
-              <a href='#about' className='page-scroll'>
+              <a className='page-scroll' onClick={
+                () => scrollTo("about")
+                }>
                 Rólunk
               </a>
             </li>
             <li>
-              <a href='#about3' className='page-scroll'>
+              <a className='page-scroll ' onClick={() => scrollTo("about3")}>
                 Tudtad-e?
               </a>
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
+              <a  className='page-scroll' onClick={() => scrollTo("services")}>
                 Amivel Foglalkozunk
               </a>
             </li>
             <li>
-              <a href='#portfolio' className='page-scroll'>
+              <a  className='page-scroll' onClick={() => scrollTo("portfolio")}>
                 Gallery
               </a>
             </li>
             <li>
-              <a href='#testimonials' className='page-scroll'>
+              <a  className='page-scroll' onClick={() => scrollTo("testimonials")}>
                 Rólunk Mondták
               </a>
             </li>
             <li>
-              <a href='#team' className='page-scroll'>
+              <a className='page-scroll' onClick={() => scrollTo("team")}>
                 Csapat
               </a>
             </li>
             <li>
-              <a href='#contact' className='page-scroll'>
+              <a className='page-scroll' onClick={() => scrollTo("contact")}>
                 Contact
               </a>
             </li>
@@ -70,5 +134,15 @@ export const Navigation = (props) => {
         </div>
       </div>
     </nav>
+
+
+    <div className={classes.wrapper}>
+        <div className={classes.contentContainer}>
+          <div className={classes.content}>
+            <Outlet />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }

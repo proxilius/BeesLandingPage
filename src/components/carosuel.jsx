@@ -8,7 +8,7 @@ export const MyCarousel = (props) => {
   return (
     <div id='about3'>
       <div className='container-fluid'>
-        <h1> <span>Tudtad-e?</span> </h1>
+        <h1> <span class='backForTudtadE'>Tudtad-e?</span> </h1>
         <div className='row' >
         <Carousel fade>
         <Carousel.Item style={{ justifyContent:"center"}}>
