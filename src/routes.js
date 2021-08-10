@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { Navigation } from './components/navigation'
+import { Navigation } from './components/navBars/navigation'
 import MainLayout from './Layouts/MainLayout';
 import Profile from './Layouts/Profile'
 

@@ -11,7 +11,8 @@ export const MyGallery = (props) => {
         <h1>Galéria</h1>
       <Gallery >
         <div className="container">
-        <div className="col-md-3 ">
+          <div className="row">
+          <div className="col-md-3 ">
           <div className="gallery-pic-item">
               <Item
                   original="/img/BeesPictures/Gallery/1.jpg"
@@ -54,6 +55,8 @@ export const MyGallery = (props) => {
             </Item>
             </div>
         </div>
+          </div>
+        
         </div>
         
 

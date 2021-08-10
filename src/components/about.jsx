@@ -3,11 +3,11 @@ export const About = (props) => {
     <div id='about'>
       <div className='container'>
         <div className='row'>
-          <div className='col-xs-12 col-md-12 col-lg-6' align="center">
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6' align='center'>
           {' '}
             <img src='img/BeesPictures/about.jpg' className='img-responsive' alt=''/>{' '}
           </div>
-          <div className='col-xs-12 col-md-12 col-lg-6'>
+          <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'>
             <div className='about-text'>
               <h2>Rólunk</h2>
               <p>

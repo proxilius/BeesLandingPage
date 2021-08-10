@@ -7,11 +7,11 @@ export const MyCarousel = (props) => {
 
   return (
     <div id='about3'>
-      <div className='container-fluid'>
+      <div className='container'>
         <h1> <span class='backForTudtadE'>Tudtad-e?</span> </h1>
-        <div className='row' >
-        <Carousel fade>
-        <Carousel.Item style={{ justifyContent:"center"}}>
+        <div className='row'>
+        <Carousel>
+        <Carousel.Item >
           <img
             style={{ display:"flex", width:"100%", height:"800px",}}
             src="img/BeesPictures/carousel1.jpg"

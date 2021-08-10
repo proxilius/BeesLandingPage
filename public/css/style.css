@@ -65,6 +65,13 @@ hr {
 	border: 0;
 }
 /* Navigation */
+@media (max-width: 766px) {
+.navbar-header{
+	width: 100%;
+}
+}
+
+
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
@@ -80,7 +87,6 @@ hr {
 	font-weight: 500;
 	color: #333;
 	text-transform: uppercase;
-	margin-left: -100px;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
@@ -94,9 +100,10 @@ hr {
 	cursor: pointer;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
-	display: block;
+	display: flex;
+	justify-content:"flex-end";
 	position: absolute;
-	left: 0;
+	float: right;
 	bottom: -1px;
 	width: 0;
 	height: 2px;
@@ -105,7 +112,8 @@ hr {
 	transition: width 0.2s;
 }
 #menu.navbar-default .navbar-nav > li > a:hover:after {
-	width: 100%;
+	width: 75%;
+	
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background-color: transparent;
