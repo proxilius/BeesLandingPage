@@ -25,23 +25,28 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 })
 
-const MainLayout = () => {
-  const [landingPageData, setLandingPageData] = useState({})
-  useEffect(() => {
-    setLandingPageData(JsonData)
+const MainLayout = (landingPageData) => {
+  // const [landingPageData, setLandingPageData] = useState({})
+  // useEffect(() => {
+  //   setLandingPageData(JsonData)
+  // }, [])
+   useEffect(() => {
+
+     console.log("mydata")
+     console.log(landingPageData)
   }, [])
-  const myRef = useRef(null)
+
   return (
               <div>
-            <Header data={landingPageData.Header} />
-            <Features data={landingPageData.Features} />
-            <About data={landingPageData.About} />
-            <MyCarousel data={landingPageData.About} />
-            <Services data={landingPageData.Services} />
+            <Header data={landingPageData.landingPageData.Header} />
+            <Features data={landingPageData.landingPageData.Features} />
+            <About data={landingPageData.landingPageData.About} />
+            <MyCarousel data={landingPageData.landingPageData.About} />
+            <Services data={landingPageData.landingPageData.Services} />
             <MyGallery />
-            <Testimonials data={landingPageData.Testimonials} />
-            <Team data={landingPageData.Team} />
-            <Contact data={landingPageData.Contact} />
+            <Testimonials data={landingPageData.landingPageData.Testimonials} />
+            <Team data={landingPageData.landingPageData.Team} />
+            <Contact data={landingPageData.landingPageData.Contact} />
           </div>
   )
 }

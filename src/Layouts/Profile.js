@@ -1,10 +1,17 @@
 import React from 'react';
-
+import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom";
 
+ const Profile = (data) => {
+    let { id } = useParams();
+    let picture = data.data.Team[id].img.split('/').pop().split('.')[0] =="petra"
 
- const Profile = () => {
-    let { id, name } = useParams();
+    useEffect(() => {
+
+        console.log("mydataProfile")
+        console.log(data.data.Team[id].img)
+        picture = data.data.Team[id].img.split('/').pop()
+     }, [])
 
     return(
         <div className="container" >
@@ -13,11 +20,11 @@ import { useParams } from "react-router-dom";
             <div className="px-4 pt-5 pb-4 cover">
                 <div className="media align-items-end profile-head">
                     <div className="profile mr-3">
-                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80" alt="..." width="130" className="rounded mb-2 img-thumbnail"/>
+                        <img src={`public/assets/pics/${data.data.Team[id].img.split('/').pop()}`} alt='logo' width="130" className="rounded mb-2 img-thumbnail"/>
                             <a href="#" className="btn btn-outline-dark btn-sm btn-block">Edit profile</a>
                      </div>
                     <div className="media-body mb-5 text-white">
-                        <h4 className="mt-0 mb-0">{name}</h4>
+                        <h4 className="mt-0 mb-0">{data.data.Team[id].name}</h4>
                         <p className="small mb-4"> <i className="fas fa-map-marker-alt mr-2"></i>New York</p>
                     </div>
                 </div>

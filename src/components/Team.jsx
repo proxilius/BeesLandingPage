@@ -17,7 +17,7 @@ export const Team = (props) => {
                 <div key={`${d.name}-${i}`} className='col-xl-3 col-lg-6 col-md-6 col-xs-12'>
                   
                     <div className='thumbnail'>
-                    <Link to={`/profile/${i}/${d.name}`}>
+                    <Link to={`/profile/${i}`}>
                       {' '}
                       <img src={d.img} alt='...' className='team-img' />
                       <div className='caption'>

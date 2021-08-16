@@ -5,13 +5,14 @@ import MainLayout from './Layouts/MainLayout';
 import Profile from './Layouts/Profile'
 
 
-const routes = () => [
+
+const routes = (landingPageDataProp) => [
   { 
     path: '',
     element: <Navigation />,
     children: [
-    { path: 'profile/:id/:name', element: <Profile /> },
-    { path: '', element: <MainLayout /> },
+    { path: 'profile/:id', element: <Profile data={landingPageDataProp} /> },
+    { path: '', element: <MainLayout landingPageData={landingPageDataProp}/> },
     ]
 }
 ];
