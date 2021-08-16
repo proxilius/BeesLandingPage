@@ -20,7 +20,7 @@ import { useParams } from "react-router-dom";
             <div className="px-4 pt-5 pb-4 cover">
                 <div className="media align-items-end profile-head">
                     <div className="profile mr-3">
-                        <img src={`public/assets/pics/${data.data.Team[id].img.split('/').pop()}`} alt='logo' width="130" className="rounded mb-2 img-thumbnail"/>
+                        <img src={require(`./pics/${data.data.Team[id].img.split('/').pop()}`).default} alt='logo' width="130" className="rounded mb-2 img-thumbnail"/>
                             <a href="#" className="btn btn-outline-dark btn-sm btn-block">Edit profile</a>
                      </div>
                     <div className="media-body mb-5 text-white">
@@ -43,11 +43,10 @@ import { useParams } from "react-router-dom";
                 </ul>
             </div>
             <div className="px-4 py-3">
-                <h5 className="mb-0">About</h5>
+                <h5 className="mb-3">Rólam</h5>
                 <div className="p-4 rounded shadow-sm bg-light">
-                    <p className="font-italic mb-0">Web Developer</p>
-                    <p className="font-italic mb-0">Lives in New York</p>
-                    <p className="font-italic mb-0">Photographer</p>
+                    <p className="font-weight-bold mb-3">{data.data.Team[id].job}</p>
+                    <p className="font-italic mb-0">{data.data.Team[id].desc}</p>
                 </div>
             </div>
             
