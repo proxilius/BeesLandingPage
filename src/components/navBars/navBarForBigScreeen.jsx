@@ -59,7 +59,7 @@ export const NavBarBig = (props) => {
                   Rólunk
                 </a>
               </li>
-              <li>
+              <li className="nav-item" id="navItemMobile">
                 <a className='page-scroll '  onClick={() => scrollTo("about3")}>
                   Tudtad-e?
                 </a>
