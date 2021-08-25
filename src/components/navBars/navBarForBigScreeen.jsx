@@ -1,7 +1,29 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
 export const NavBarBig = (props) => {
     const navigate = useNavigate();
+    let listener = null
+    const [scrollState, setScrollState] = useState("navbar navbar-default navbar-expand-lg navbar-expand-md navbar-fixed-top")
+    
+    useEffect(() => {
+         document.querySelector('#root').addEventListener("scroll", e => {
+        let scrolled =  e.target.scrollTop
+        console.log(scrolled)
+        if (scrolled > 120) {
+            setScrollState("navbar active navbar-default navbar-expand-lg navbar-expand-md navbar-fixed-top")
+        } else {
+          if (scrollState !== "top") {
+            setScrollState("navbar navbar-default navbar-expand-lg navbar-expand-md navbar-fixed-top")
+          }
+        }
+      },true )
+      // return () => {
+      //   document.removeEventListener("scroll", listener)
+      // }
+    }, [scrollState])
+    
     const scrollTo = async (id) => {
       let element = document.getElementById(id);
       if(element == undefined) {
@@ -11,15 +33,17 @@ export const NavBarBig = (props) => {
         element = document.getElementById(id);
         
     }
-  
       element.scrollIntoView({
         behavior: "smooth",
       });
+
+
+      
     };
     return(
   
 
-      <nav id='menu' className=' navbar navbar-default navbar-expand-lg navbar-expand-md navbar-fixed-top '>
+      <nav id='menu' className= {scrollState}>
         <div className='container-fluid '>
   
           <div className='navbar-header d-dflex justify-content-between'>
