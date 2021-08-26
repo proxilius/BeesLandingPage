@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
     height:'100%',
     width:'100%',
-    paddingTop:'64px'
   }
 }));
 
