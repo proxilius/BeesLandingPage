@@ -37,7 +37,7 @@ const MainLayout = (landingPageData) => {
   }, [])
 
   return (
-              <div>
+          <div>
             <Header data={landingPageData.landingPageData.Header} />
             <Features data={landingPageData.landingPageData.Features} />
             <About data={landingPageData.landingPageData.About} />
