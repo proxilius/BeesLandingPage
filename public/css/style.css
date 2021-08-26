@@ -90,9 +90,9 @@ hr {
 
 #menu {
 	padding: 15px;
-	transition: all 0.4s;
+	transition: all 0.8s;
 }
-#menu.navbar {
+#menu.navbar-default {
 	background-color: rgba(255, 255, 255,0.1);
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
@@ -104,7 +104,7 @@ hr {
 	color: #333;
 	text-transform: uppercase;
 }
-#menu.navbar .navbar-nav > li > a {
+#menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	color: #555;
@@ -115,7 +115,7 @@ hr {
 	margin: 9px 20px 0 20px;
 	cursor: pointer;
 }
-#menu.navbar .navbar-nav > li > a:after {
+#menu.navbar-default .navbar-nav > li > a:after {
 	display: flex;
 	justify-content:"flex-end";
 	position: absolute;
@@ -141,10 +141,10 @@ hr {
 		border-color: rgb(231, 231, 231);
 	}
 	}
-.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
 	background-color: transparent;
 }
-.navbar .navbar-nav > .active > a:after, .navbar .navbar-nav > .active > a:hover:after, .navbar .navbar-nav > .active > a:focus:after {
+.navbar .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a:hover:after, .navbar-default .navbar-nav > .active > a:focus:after {
 	display: block !important;
 	position: absolute !important;
 	left: 0 !important;
@@ -158,11 +158,11 @@ hr {
 .navbar-toggle {
 	border-radius: 10;
 }
-.navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover, .navbar .navbar-toggle:focus {
 	background-color: #fff;
 	border-color: #608dfd;
 }
-.navbar .navbar-toggle:hover>.icon-bar {
+.navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #608dfd;
 }
 .section-title {
