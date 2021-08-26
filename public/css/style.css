@@ -138,13 +138,8 @@ hr {
 	
 	#menu.navbar {
 		background-color: rgb(255, 255, 255);
-		border-color: rgba(231, 231, 231, 0.5);
+		border-color: rgb(231, 231, 231);
 	}
-	
-	.navbar .navbar-brand, .navbar .nav-link {
-		color: #555;
-	}
-	
 	}
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
 	background-color: transparent;
