@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core';
+import { Hidden, makeStyles } from '@material-ui/core';
 import {useNavigate} from 'react-router-dom';
 
 import SmoothScroll from 'smooth-scroll'
@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flex: '1 1 auto',
     overflow: 'auto',
+    overflowX:'hidden',
     height:'100%',
     width:'100%',
   }

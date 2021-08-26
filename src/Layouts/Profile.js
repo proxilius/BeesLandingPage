@@ -15,7 +15,7 @@ import { useParams } from "react-router-dom";
 
     return(
         <div className="container" >
-    <div className="col-md-5 mx-auto pt-5" >
+    <div className="col-md-5 col-xs-12 mx-auto pt-5" >
         <div className="bg-white shadow rounded overflow-hidden">
             <div className="px-4 pt-5 pb-4 cover">
                 <div className="media align-items-end profile-head">
